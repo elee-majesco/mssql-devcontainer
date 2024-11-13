@@ -7,7 +7,35 @@
 	"workspaceFolder": "/workspaces",
   "customizations": {
     "vscode": {
-      "settings": {},
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+          "source.fixAll": "always"
+        },
+        "mssql.connections": [
+          {
+            "server": "sql-server",
+            "database": "",
+            "authenticationType": "SqlLogin",
+            "user": "sa",
+            "password": "P@ssw0rd",
+            "emptyPasswordInput": false,
+            "savePassword": true,
+            "encrypt": "Mandatory",
+            "trustServerCertificate": true,
+            "connectTimeout": 15,
+            "commandTimeout": 30,
+            "applicationName": "vscode-mssql"
+          }
+        ],
+        "files.associations": {
+          "*.sql": "sql"
+        },
+        "[sql]": {
+          "editor.defaultFormatter": "ms-mssql.mssql"
+        },
+        "mssql.enableRichExperiences": true
+      },
       "extensions": [
         "ms-mssql.data-workspace-vscode",
         "ms-mssql.mssql",

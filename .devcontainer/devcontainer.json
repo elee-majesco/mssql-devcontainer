@@ -1,0 +1,20 @@
+{
+	"name": "MSSQL Server",
+
+	"dockerComposeFile": "docker-compose.yml",
+
+  "service": "app",
+	"workspaceFolder": "/workspaces",
+  "customizations": {
+    "vscode": {
+      "settings": {},
+      "extensions": [
+        "ms-mssql.data-workspace-vscode",
+        "ms-mssql.mssql",
+        "ms-mssql.sql-bindings-vscode",
+        "ms-mssql.sql-database-projects-vscode"
+      ]
+    }
+  }
+}
+  
